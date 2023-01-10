@@ -11,6 +11,22 @@ method 입력 데이터 서버 전달방식 -->
 <html>
     <head>
         <title>WEB</title> 
+        <script type="text/javascript">
+            function doSomething(){
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                // let상수
+                // 확인용 디버깅
+                console.log(a)
+                console.log(b)
+                // 계산결과를 html 페이지에 추가해줘야한다.
+
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+                document.getElementById("valueC").innerHTML = Number(a) + Number(b)
+            }
+
+        </script>
     </head>
 
     <body>
@@ -42,7 +58,19 @@ method 입력 데이터 서버 전달방식 -->
         <!-- 속성 이벤트 핸들러 -->
         <input type="button" value="예" name='btn' onclick="alert('출력')">
 
-    </body>
 
+        <button value="계산" name="noBtn" onclick="doSomething()">계산</button>
+        console.log("")
+        <input type="submit" name="send" value="서버로전송" onclick="doSomething()">
+
+        <label for="inputA">a</label>
+        <input id="inputA" value=1>
+
+        <label for="inputB">a</label>
+        <input id="inputB" value=2>
+        
+        <p><span id="valueA">1</span>+<span id="valueB">2</span> = <div id="valueC">3</div></p>
+
+    </body>
 
 </html>
