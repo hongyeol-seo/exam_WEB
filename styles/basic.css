@@ -1,0 +1,26 @@
+#desert > li{
+    background-color: aquamarine;
+    font-size: large;
+    color: black;
+}
+
+ul>li {
+    color: red;
+
+}
+
+body > ul {
+    color: blue;
+
+}
+
+body > h3 {
+    color: yellow;
+}
+
+/* #아이디 */
+h5 > li {
+    color: black;
+
+}
+

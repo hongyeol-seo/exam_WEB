@@ -1,0 +1,48 @@
+<!-- #입력관련 -->
+<!-- <form></form> -->
+<!-- 전송관련 속성 -->
+<!-- action 데이터 처리 URL
+method 입력 데이터 서버 전달방식 -->
+<!-- (GET방식, 안보이고 -->
+<!-- POST방식) 보이고  -->
+<!-- 사용자로부터 입력을 받을 수 있는 태그 -->
+<!-- input type="입력의 종류" , name = , value 사용자에게 보여지는 값 on 이벤트이름 = 자바스크립트 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB</title> 
+    </head>
+
+    <body>
+        <h1>다양한 입력 태그 살펴보기</h1><hr>
+        <h4>테스트 입력</h4>
+        성별 입력 :
+        <input type="text" name="gender" id="gender" value="남자">
+        <h4>비밀번호입력</h4>
+        비밀번호 : 
+        <input type="password" name="gender" id="gender" placeholder="영어,숫자,8자리">
+        <h4>선택</h4>
+        <input type="radio" name="gender" id="gender" value="A" checked>A형<br>
+        <input type="radio" name="gender" id="gender" value="B">B형<br>
+
+        <h4>취미선택</h4>
+        체크박스<br>
+        <input type="checkbox" name="hobby" id="gender" value="오토바이">오토바이<br>
+        <input type="checkbox" name="hobby" id="gender" value="파이썬">파이썬<br>
+        <input type="checkbox" name="hobby" id="gender" value="독서">독서<br>
+        <h4>오늘의 메시지</h4>
+        <textarea rows="20" cols="50" name="msg" placeholder="칼퇴하자">Happy</textarea>
+    
+        <h4>버튼 입력</h4>
+        삭제 결정: 
+        <input type="button" value="예" name='btn'>
+        <button value="아니오" name="noBtn">아니오</button>
+        <input type="submit" name="send" value="서버로전송">
+
+        <!-- 속성 이벤트 핸들러 -->
+        <input type="button" value="예" name='btn' onclick="alert('출력')">
+
+    </body>
+
+
+</html>
