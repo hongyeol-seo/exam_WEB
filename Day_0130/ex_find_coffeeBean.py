@@ -19,7 +19,6 @@ for name in store_names:
     print(name.text)
 
 
-
 # store_names = soup.select('div.store_txt > p.name > span')
 # store_name_list = []
 # for name in store_names:
@@ -33,3 +32,4 @@ for name in store_names:
 # for addr in store_addresses:
 #     print(addr.get_text())
 # driver.quit() # web driver 종료
+

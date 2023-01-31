@@ -9,3 +9,10 @@ image_location = home_image['src'] # <img> 태그의 ‘src’ 속성값을 가�
 
 print(image_location)
 urlretrieve(image_location, 'logo.jpg')
+
+
+
+
+
+
+
